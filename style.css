@@ -1,0 +1,304 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@keyframes pisca {
+    100%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes escrever{
+    100%{
+        max-width: 100%;
+    }
+}
+
+ul{
+
+    list-style: none;
+
+}
+
+
+a{
+
+    text-decoration: none;
+    color: #000000;
+
+}
+
+body{
+
+    background-image: url(imagens/fundo-site.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+
+}
+
+.cartao{
+
+    background-color: #070b12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes{
+
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.cartao .minhas-informacoes img{
+
+    width: 95px;
+    height: 96px;
+    border-radius: 50px;
+    border: 4px solid #02d08f;
+
+}
+
+
+
+.cartao .minhas-informacoes .nome, .cargo{
+
+    font-size: 26px;
+    padding-right: 2px;
+    max-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: pisca normal infinite .8s, escrever normal 5s steps(55) both; 
+}
+
+.cartao .minhas-informacoes .cargo{
+
+    font-size: 20px;
+    color: #b8bbc5;
+
+}
+
+.cartao .conteudo{
+
+    margin-top: 15px;
+
+}
+
+.cartao .abas{
+
+    display: flex;
+
+}
+
+.cartao .abas .aba{
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img{
+
+    width: 30px;
+    
+}
+
+.cartao .abas .aba.selecionado{
+
+    background-color: #262626;
+
+}
+
+.cartao .informacoes-abas{
+
+    background-color: #262626;
+
+}
+
+.cartao .abas .aba:hover{
+
+    background-color: #414141;
+
+}
+
+.informacoes-abas .informacao{
+
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+
+    display: block;
+
+}
+
+.informacoes-abas .sub-titulo{
+
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+
+}
+
+.informacoes-abas .descricao{
+
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.informacoes-abas .descricao span{
+
+    color: #02d08f;
+
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{
+
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover{
+
+    opacity: 0.8;
+
+}
+
+.redes-sociais .instagram{
+
+    background-color: #6c205f;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 23.8%;
+
+}
+.redes-sociais .instagram:hover{
+
+    background-color: #ee3acf;
+
+}
+
+.redes-sociais .instagram img{
+
+    width: 30px;
+    height: 30px;
+
+}
+
+
+.redes-sociais .linkedin{
+
+    background-color: #003c5a;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 23.8%;
+
+}
+
+.redes-sociais .linkedin:hover{
+
+    background-color: #268ec3;
+
+}
+
+.redes-sociais .linkedin img{
+
+    width: 25px;
+    height: 25px;
+
+}
+
+.redes-sociais .github{
+
+    background-color: #3e3e3e;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 23.8%;
+
+}
+
+.redes-sociais .github:hover{
+
+    background-color: #8d8d8d;
+
+}
+
+.redes-sociais .github img{
+
+    width: 25px;
+    height: 25px;
+
+}
+
+* {
+
+    scrollbar-width: thin;
+    scrollbar-color: #e228d8 #070d12;
+
+}
+
+*::-webkit-scrollbar{
+
+    width: 12px;
+
+}
+
+*::-webkit-scrollbar-track{
+
+    background: #070d12;
+
+}
+
+*::-webkit-scrollbar-thumb{
+
+    background-color: #e228d8;
+    border-radius: 20px;
+    border: 3px solid #070d12;
+
+}
